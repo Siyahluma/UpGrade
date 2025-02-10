@@ -1,0 +1,39 @@
+.study-material-card {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    transition: transform 0.3s ease;
+}
+
+.study-material-card:hover {
+    transform: scale(1.02);
+}
+
+.study-material-card .card-header {
+    background-color: rgba(74, 144, 226, 0.1);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.study-resources h5 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.study-resources .list-group-item {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.study-resources .list-group-item a {
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.study-resources .list-group-item a:hover {
+    color: var(--primary-color);
+}
+
+.study-resources .badge {
+    font-weight: 500;
+}

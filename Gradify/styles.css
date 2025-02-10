@@ -1,0 +1,116 @@
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #27ae60;
+    --text-color: #e0e0e0;
+    --background-color: #1e1e1e;
+    --card-background: #2c2c2c;
+    --navbar-background: #121212;
+    --border-color: #3a3a3a;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.gradify-app {
+    min-height: 100vh;
+    background-color: var(--background-color);
+}
+
+.navbar {
+    background-color: var(--navbar-background) !important;
+    border-bottom: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand img {
+    filter: brightness(1.2) contrast(1.2);
+}
+
+.dashboard-content {
+    background-color: var(--card-background) !important;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.card {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+.card-header {
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-link {
+    color: var(--text-color) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.list-group-item {
+    background-color: var(--card-background);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.modal-content {
+    background-color: var(--card-background);
+    color: var(--text-color);
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.modal-body {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.dropdown-menu {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.dropdown-item {
+    color: var(--text-color);
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--primary-color);
+}
+
+.table {
+    color: var(--text-color);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.progress {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
